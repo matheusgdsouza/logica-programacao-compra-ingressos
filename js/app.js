@@ -13,4 +13,11 @@ function comprar(){
     let pistaDisponivel = pegaQuatidade("qtd-pista");
     let superiorDisponivel = pegaQuatidade("qtd-superior");
     let inferiorDisponivel = pegaQuatidade("qtd-inferior");
+
+}
+
+//função para comprar ingresso
+function compraIngresso(ingresso, qtd, id){
+    ingresso = ingresso - qtd;
+    document.getElementById(id).textContent = ingresso;
 }
